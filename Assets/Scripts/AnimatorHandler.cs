@@ -28,7 +28,7 @@ namespace kass
 
         public void UpdateAnimatorValues(float verticalMovement,float horizontalMovement,bool isSprinting)
         {
-            //Debug.Log(verticalMovement + " " + horizontalMovement);
+           // Debug.Log(verticalMovement + " " + horizontalMovement+isSprinting);
 
             #region Vertial
             float v = 0;
@@ -83,6 +83,9 @@ namespace kass
                 v = 2;
                 h = horizontalMovement;
             }
+
+            //Debug.Log(v + " " + h + isSprinting);
+
             anim.SetFloat(vertical, v, 0.1f, Time.deltaTime);
             anim.SetFloat(horizontal, h, 0.1f, Time.deltaTime);
         }

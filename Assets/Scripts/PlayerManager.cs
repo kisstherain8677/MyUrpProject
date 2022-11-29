@@ -34,6 +34,8 @@ namespace kass
         // Update is called once per frame
         void Update()
         {
+            //Debug.LogError(isSprinting);
+
             isInteracting = anim.GetBool("IsInteracting");
            
 
